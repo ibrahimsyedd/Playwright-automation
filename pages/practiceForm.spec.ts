@@ -24,4 +24,14 @@ export  class PracticeFormPage {
  async validateSubmission() {
    await expect(this.page.getByText('Thanks for submitting the form')).toHaveText('Thanks for submitting the form');
  }
+ async validateErrors() {
+ // First Name validation
+ await expect(this.page.locator('#firstName')).toHaveCSS('border-color'," rgb(220, 53, 69)");
+ // Last Name validation
+ await expect(this.page.locator('#lastName')).toHaveCSS('border-color'," rgb(220, 53, 69)");
+ // Mobile validation
+ await expect(this.page.locator('#userNumber')).toHaveCSS('border-color'," rgb(220, 53, 69)");
+ }
+ 
+
 }
