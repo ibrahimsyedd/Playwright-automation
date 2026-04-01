@@ -1,0 +1,15 @@
+{
+ "user1": {
+   "email": "ibrahimsyed2804@gmail.com",
+   "password": "Cherry@2804"
+ },
+ "user2": {
+   "email": "syedabi1234@gmail.com",
+   "password": "Cherry@2804"
+ },
+ "recipientdetails": {
+   "recipientName": "syedabi",
+   "recipientEmail": "syedabi1234@gmail.com"
+  
+ }
+}

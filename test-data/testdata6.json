@@ -1,0 +1,10 @@
+{
+    "url": "https://demoqa.com/automation-practice-form",
+    "firstName": "Ibrahim",
+    "lastName": "syed",
+    "email": "ibrahimsyed2804@gmail.com",
+    "gender" : "Male",
+    "mobile": "9876543210",
+    "assertion": "Thanks for submitting the form",
+    "bordercolor": "rgb(220, 53, 69)"
+  }

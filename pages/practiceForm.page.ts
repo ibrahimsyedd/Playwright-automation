@@ -9,14 +9,15 @@ export  class PracticeFormPage {
    await this.page.goto('https://demoqa.com/automation-practice-form');
  }
  // Locators + Actions
- async fillForm(firstName: string, lastName: string, email: string) {
+ async fillForm(firstName: string, lastName: string, email: string , mobilenumber : string) {
    await this.page.getByRole('textbox', { name: 'First Name' }).fill(firstName);
    await this.page.getByRole('textbox', { name: 'Last Name' }).fill(lastName);
    await this.page.getByRole('textbox', { name: 'name@example.com' }).fill(email);
+
    // Select Gender
    await this.page.locator('div').filter({ hasText: /^Male$/ }).click();
    // Mobile number (mandatory)
-   await this.page.getByRole('textbox', { name: 'Mobile Number' }).fill('9876543210');
+   await this.page.getByRole('textbox', { name: 'Mobile Number' }).fill(mobilenumber);
  }
  async submitForm() {
    await this.page.getByRole('button', { name: 'Submit' }).click();
